@@ -45,6 +45,25 @@ public:
         }
         cout<<dist[ans]<<"\n";
     }
+    int dfshelper(int g,bool visited[]){
+        visited[g] = true;
+        cout<< g <<" ";
+        for(auto x:l[g]){
+            if(!visited[x]){
+                dfshelper(x,visited);
+            }
+        }
+    }
+    void dfs(int src){
+        bool *vis;
+        vis = new bool[v];
+                dfshelper(i, vis);
+                cout<<endl;
+            }
+        }
+        //cout<<"No. of connected compo = "<<cnt<<endl;
+    }
+    
     
 
 
